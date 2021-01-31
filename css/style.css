@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: #eee;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    margin: auto;
+    position: relative;
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pannel{
+    position: relative;
+    height: 80vh;
+    margin: 0 1rem;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    flex: 0.5;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.active{
+    flex: 5;
+}
+.pannel h3{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: #eee;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: all 0.3s ease 0.5s;
+}
+.active.pannel h3{
+    opacity: 1;
+}
+.pannel:nth-child(1){
+    background: url("../images/1.jpg");
+    background-size: cover;
+    background-position: center
+}
+.pannel:nth-child(2){
+    background: url("../images/2.jpg");
+    background-size: cover;
+    background-position: center
+}
+.pannel:nth-child(3){
+    background: url("../images/3.jpg");
+    background-size: cover;
+    background-position: center
+}
+.pannel:nth-child(4){
+    background: url("../images/4.jpg");
+    background-size: cover;
+    background-position: center
+}
+.pannel:nth-child(5){
+    background: url("../images/5.jpg");
+    background-size: cover;
+    background-position: center
+}
